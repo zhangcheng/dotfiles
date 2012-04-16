@@ -3,8 +3,8 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-# Make vim the default editor
-export EDITOR='vim'
+# Make nano the default editor
+export EDITOR='nano -w'
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 # Highlight section titles in manual pages

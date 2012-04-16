@@ -1,6 +1,6 @@
 [user]
-	name = Joel Gillman
-	email = joeltgillman@gmail.com
+	name = ZHANG Cheng
+	email = czhang.oss@gmail.com
 
 [alias]
 	st = status
@@ -18,10 +18,10 @@
 
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
+	editor = mate
 
 [github]
-	user = jgillman
+	user = zhangcheng
 
 [branch "master"]
 	mergeoptions = --no-ff

@@ -23,7 +23,7 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write com.apple.dock autohide -bool true
 
 # Put dock on the left so I never have to see it again.
-defaults write com.apple.dock orientation -string "left"
+defaults write com.apple.dock orientation -string "right"
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
@@ -87,16 +87,16 @@ defaults write com.apple.iTunes disablePingSidebar -bool true
 defaults write com.apple.iTunes disablePing -bool true
 
 # Empty Trash securely by default. WARNING, this can take forever
-defaults write com.apple.finder EmptyTrashSecurely -bool true
+#defaults write com.apple.finder EmptyTrashSecurely -bool true
 
-# Require password 3 seconds after sleep or screen saver begins
+# Require password 5 seconds after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 3
+defaults write com.apple.screensaver askForPasswordDelay -int 5
 
 # Hot corners
 # Bottom left screen corner → Start screen saver
-defaults write com.apple.dock wvous-tl-corner -int 2
-defaults write com.apple.dock wvous-tl-modifier -int 0
+#defaults write com.apple.dock wvous-tl-corner -int 2
+#defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
