@@ -22,11 +22,14 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-# Put dock on the left so I never have to see it again.
+# Put dock on the right so I never have to see it again.
 defaults write com.apple.dock orientation -string "right"
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Add a stack of most recently used apps
+defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
 
 # Enable iTunes track notifications in the Dock
 defaults write com.apple.dock itunes-notifications -bool true
