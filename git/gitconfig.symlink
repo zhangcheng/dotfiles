@@ -6,7 +6,7 @@
 	st = status
 	co = checkout
 	sp = stash pop
-	mylog = log --author=Joel
+	mylog = log --author=\"ZHANG Cheng\"
 
 [color]
 	diff = auto
@@ -17,12 +17,21 @@
 	pager = true
 
 [core]
-	excludesfile = ~/.gitignore
-	editor = mate
+	excludesfile = /Users/czhang/.gitignore
+	editor = nano
 	quotepath = false
+	whitespace = space-before-tab,trailing-space
 
 [github]
 	user = zhangcheng
 
 [branch "master"]
 	mergeoptions = --no-ff
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain

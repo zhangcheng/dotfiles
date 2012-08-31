@@ -10,6 +10,8 @@ export PROJECTS=~/repo
 # virtualenvwrapper specific
 export WORKON_HOME=$PROJECTS/env
 
+eval "$(rbenv init -)"
+
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
 

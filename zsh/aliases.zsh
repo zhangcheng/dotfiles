@@ -4,6 +4,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias la="ls -A"
 alias ll="ls -lAhF"
+alias nw="nano -w"
 
 # Recursively delete '.DS_Store' files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
