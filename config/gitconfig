@@ -3,7 +3,10 @@
 [color]
   ui = auto
 [core]
-  excludesfile = ~/.gitignore
+  quotepath = false
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+  safecrlf = true
 [git-up "bundler"]
   check = true
 [rebase]
@@ -11,4 +14,6 @@
 [color "diff"]
   commit = yellow reverse
 [push]
-  default = tracking
+  default = current
+[credential]
+  helper = osxkeychain
